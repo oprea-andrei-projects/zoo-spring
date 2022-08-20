@@ -1,0 +1,345 @@
+
+*{
+  box-sizing: border-box;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* body{
+
+  display: grid;
+  grid-template-rows: 100px 1000px 250px;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+      "header"
+      "main"
+      "footer" 
+      
+       
+  ;
+
+ 
+  
+
+  width: 100vw;
+  height: 100vh;
+
+} */
+
+.container{
+
+  background-image: url(/imagini/bram-vranckx-SUrl-rnUKw0-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+      "header"
+      "main"
+      "aside"
+      "footer" 
+      
+       
+  ;
+
+ 
+  
+
+  width: 100vw;
+  height: 100vh;
+}
+
+.searchArea{
+  grid-area: header;
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+
+}
+
+.meniu{
+
+  display: flex;
+  flex-direction: row;
+
+
+
+}
+
+li{
+
+  list-style-type: none;
+  margin-left: 9px;
+  cursor: pointer;
+}
+
+.serachItems{
+
+display: flex;
+flex-direction: row;
+
+  margin-top: 12px;
+  margin-left: auto;
+  
+}
+
+.input-search{
+
+height: 10px;
+}
+
+.searchBTN{
+
+margin-left: 10px;
+margin-right: 5px;
+}
+
+.displayArea{
+
+  grid-area: main;
+  width: 100%;
+
+  height:400px ;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  justify-content: center;
+  align-items: center;
+
+}
+
+.contactArea{
+
+  grid-area: footer;
+
+  width: 100%;
+  height: 80px;
+  background-color: #000;
+  color: #fff;
+  opacity: .7;
+
+  margin-top: 10px;
+}
+
+
+.fdiv1{
+
+  width: 100%;
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.fa {
+  padding: 5px;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 1px;
+  border-radius: 50%;
+ 
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: black;
+  color: white;
+}
+
+.fa-twitter {
+  background: black;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: black;
+  color: white;
+}
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.loginbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.deletebtn{
+
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+
+a {
+  color: dodgerblue;
+}
+
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+
+.card{
+
+
+  display: flex;
+  flex-direction: column;
+ 
+
+  cursor: pointer;
+  border-radius: 5px;
+  width: 150px;
+  height: 100px;
+
+  background-image: url(/imagini/b-nw-8uJ0Am-ZdTA-unsplash.jpg);
+
+
+  background-repeat: no-repeat;
+  background-size: cover;
+ 
+  box-shadow:10px 5px 5px darkslategrey;
+  margin:10px;
+
+
+}
+
+.cardLabel{
+
+  width: 100%;
+  height: 50px;
+  color: white;
+  font-size: 12 px;
+}
+
+.animNo{
+
+width: 100%;
+height: 50px;
+color:red;
+font-size: 12 px;
+
+}
+
+.added_at{
+
+display: none;
+
+
+
+}
+
+.pageNumberCard{
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+background-color: white;
+border-radius: 2px;
+width: 30px;
+height: 30px;
+border: 1px solid black;
+margin-left: 10px;
+color: black;
+
+align-content: center;
+justify-content: center;
+cursor: pointer;
+}
+
+
+.modal{
+
+display: none;
+
+}
+
+.pagination{
+
+grid-area: aside;
+
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+}
+
+img{
+
+display: block;
+}
+
+
+
+
+
+
+
+
+
